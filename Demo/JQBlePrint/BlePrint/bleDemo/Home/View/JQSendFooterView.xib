@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JQSendFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DA6-JT-7pW">
+                    <rect key="frame" x="10" y="10" width="368" height="40"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QaX-0S-GMM"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emD-X5-wSb">
+                    <rect key="frame" x="10" y="60" width="179" height="44"/>
+                    <state key="normal" title="发送打印">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQg-1P-1JJ">
+                    <rect key="frame" x="199" y="60" width="179" height="44"/>
+                    <state key="normal" title="恢复默认">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DA6-JT-7pW" secondAttribute="trailing" constant="10" id="7uh-1n-8lV"/>
+                <constraint firstItem="dQg-1P-1JJ" firstAttribute="centerY" secondItem="emD-X5-wSb" secondAttribute="centerY" id="7y0-6n-49W"/>
+                <constraint firstItem="emD-X5-wSb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="KFn-iq-AUw"/>
+                <constraint firstItem="DA6-JT-7pW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="LOc-Wf-TCV"/>
+                <constraint firstItem="dQg-1P-1JJ" firstAttribute="leading" secondItem="emD-X5-wSb" secondAttribute="trailing" constant="10" id="MDK-zf-1lL"/>
+                <constraint firstItem="DA6-JT-7pW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Otf-Ma-huQ"/>
+                <constraint firstItem="dQg-1P-1JJ" firstAttribute="width" secondItem="emD-X5-wSb" secondAttribute="width" id="c0v-6a-uUv"/>
+                <constraint firstAttribute="trailing" secondItem="dQg-1P-1JJ" secondAttribute="trailing" constant="10" id="gIb-oi-3CF"/>
+                <constraint firstItem="dQg-1P-1JJ" firstAttribute="height" secondItem="emD-X5-wSb" secondAttribute="height" id="raF-Jw-TyH"/>
+                <constraint firstItem="emD-X5-wSb" firstAttribute="top" secondItem="DA6-JT-7pW" secondAttribute="bottom" constant="10" id="tQb-as-sFb"/>
+                <constraint firstAttribute="bottom" secondItem="emD-X5-wSb" secondAttribute="bottom" constant="10" id="wdy-Rl-gQ0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="defaultBtn" destination="dQg-1P-1JJ" id="BRe-3o-UzY"/>
+                <outlet property="sendBtn" destination="emD-X5-wSb" id="Lny-TP-8lh"/>
+                <outlet property="textField" destination="DA6-JT-7pW" id="qNj-pt-WGR"/>
+            </connections>
+            <point key="canvasLocation" x="-66" y="-164"/>
+        </view>
+    </objects>
+</document>
